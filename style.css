@@ -1,0 +1,266 @@
+
+:root {
+  --green: #10B981;
+  --green-dark: #047857;
+  --text: #111827;
+  --bg: #ffffff;
+  --bg-light: #f9fafb;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 1rem;
+}
+
+.top-bar {
+  background: var(--bg);
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.top-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+
+.logo-img {
+  height: 60px;
+  width: auto;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .logo-img {
+    height: 50px;
+  }
+}
+
+.tel {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  font-weight: 500;
+}
+
+.hero {
+  background: var(--green);
+  color: white;
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+}
+
+.hizmetler-section {
+  padding: 4rem 1rem;
+  background: var(--bg-light);
+}
+
+.hizmetler-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.hizmet-kart {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: transform 0.3s;
+}
+.hizmet-kart:hover {
+  transform: translateY(-5px);
+}
+
+.hizmet-kart h3 {
+  color: var(--green-dark);
+}
+
+.kurumsal-section {
+  padding: 4rem 1rem;
+  background: #fff;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: var(--green);
+  text-align: center;
+}
+.slogan {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 1rem 0 2rem;
+}
+.wa-float,
+.phone-float {
+  position: fixed;
+  right: 20px; /* sol yerine sağ */
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,.25);
+  z-index: 999;
+  animation: pulse 1.5s infinite;
+}
+
+.wa-float {
+  bottom: 80px;
+}
+.phone-float {
+  bottom: 20px;
+}
+
+.wa-icon {
+  width: 28px;
+  height: 28px;
+  fill: #fff;
+}
+
+.phone-float .icon {
+  font-size: 26px;
+  color: #fff;
+}
+
+.tel {
+  text-decoration: none !important;
+}
+
+.tel span {
+  text-decoration: none !important;
+}
+.wa-float,
+.phone-float {
+  background: #25D366; /* WhatsApp rengi */
+  color: #fff;
+}
+
+.phone-float {
+  background: #10B981; /* Yeşil tonlu telefon butonu */
+}
+
+.wa-icon {
+  width: 28px;
+  height: 28px;
+  fill: #fff !important;
+}
+
+.phone-float .icon {
+  font-size: 26px;
+  color: #fff !important;
+}
+.phone-float {
+  text-decoration: none !important;
+}
+
+.phone-float .icon {
+  text-decoration: none !important;
+  display: inline-block;
+  line-height: 1;
+}
+.iletisim-section {
+  padding: 4rem 1rem;
+  background: #f9fafb;
+}
+
+.iletisim-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.iletisim-bilgileri p {
+  margin-bottom: 1.2rem;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.iletisim-bilgileri a {
+  color: var(--green-dark);
+  text-decoration: none;
+}
+
+.iletisim-bilgileri a:hover {
+  text-decoration: underline;
+}
+
+.harita-kapsayici {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.harita {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+@media (max-width: 768px) {
+  .iletisim-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.ekip-section {
+  padding: 4rem 1rem;
+  background: #ffffff;
+}
+
+.ekip-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.ekip-kart {
+  background: #f3f4f6;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+  transition: transform 0.3s;
+}
+
+.ekip-kart:hover {
+  transform: translateY(-5px);
+}
+
+.ekip-foto {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.ekip-kart h3 {
+  font-size: 1.1rem;
+  color: var(--green-dark);
+  margin-bottom: 0.5rem;
+}
+
+.ekip-kart p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
